@@ -1,0 +1,11 @@
+--EXEC Integration.CreateAtlasTLServiceOffering
+
+TRUNCATE TABLE Staging.Carrier
+
+TRUNCATE TABLE Carrier.LTLCarrierServiceOffering.LTLServiceOffering
+TRUNCATE TABLE Carrier.CarrierAccount.Account
+TRUNCATE TABLE Carrier.TLCarrierServiceOffering.TLServiceOffering
+
+TRUNCATE TABLE AntiCorruptionStore.DomainMap.CarrierAccountMap
+TRUNCATE TABLE AntiCorruptionStore.DomainMap.LTLCarrierServiceOfferingMap
+TRUNCATE TABLE AntiCorruptionStore.DomainMap.TLCarrierServiceOfferingMap
